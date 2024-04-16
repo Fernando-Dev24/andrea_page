@@ -1,0 +1,41 @@
+@layer base {
+   .landing {
+      @apply relative w-screen h-screen;
+      background: url('/assets/main-bg.jpg') no-repeat top;
+      background-size: cover;
+
+      nav,
+      section {
+         @apply relative z-10;
+      }
+
+      nav {
+         @apply container flex justify-between items-center py-8 text-primary-100;
+         & > a {
+            @apply text-3xl font-silkFlowers;
+         }
+         & div a {
+            @apply inline-block mx-5 last:mr-0 font-semibold border-b-2 border-b-fourth-600 text-lg tracking-widest;
+         }
+      }
+
+      section {
+         @apply container h-[75vh] flex flex-col justify-center items-center;
+         h1 {
+            @apply font-silkFlowers text-9xl text-primary-100;
+         }
+         p {
+            @apply relative text-2xl text-fourth-600;
+            &::before {
+               content: '';
+               @apply absolute -bottom-5 left-1/2 -translate-x-1/2 w-20 h-2 bg-primary-600 rounded-sm;
+            }
+         }
+      }
+
+      &::after {
+         content: '';
+         @apply absolute top-0 left-0 w-full h-screen bg-primary-0/50;
+      }
+   }
+}

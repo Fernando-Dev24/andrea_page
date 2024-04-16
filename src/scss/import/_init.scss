@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 @font-face {
-   font-family: 'Balkind';
-   src: url('../../fonts/balkind-demo.otf') format('truetype');
+   font-family: 'Silk Flower';
+   src: url('/fonts/Silk\ Flower.otf') format('truetype');
 }
 
 * {
@@ -13,5 +13,6 @@
 }
 
 body {
-   font-family: 'Balkind', sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 1rem; /* 16px */
 }
