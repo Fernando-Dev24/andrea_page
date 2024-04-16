@@ -1,6 +1,6 @@
 @layer base {
    .landing {
-      @apply relative w-screen h-screen;
+      @apply relative h-screen;
       background: url('/assets/main-bg.jpg') no-repeat top;
       background-size: cover;
 
@@ -10,22 +10,22 @@
       }
 
       nav {
-         @apply container flex justify-between items-center py-8 text-primary-100;
+         @apply w-[90%] my-0 mx-auto flex justify-between items-center py-8 text-primary-100;
          & > a {
-            @apply text-3xl font-silkFlowers;
+            @apply text-2xl lg:text-3xl font-silkFlowers;
          }
          & div a {
-            @apply inline-block mx-5 last:mr-0 font-semibold border-b-2 border-b-fourth-600 text-lg tracking-widest;
+            @apply inline-block mx-2 lg:mx-5 last:mr-0 font-semibold border-b-2 border-b-fourth-600 text-sm lg:text-base tracking-normal lg:tracking-widest;
          }
       }
 
       section {
          @apply container h-[75vh] flex flex-col justify-center items-center;
          h1 {
-            @apply font-silkFlowers text-9xl text-primary-100;
+            @apply font-silkFlowers text-6xl lg:text-9xl text-primary-100;
          }
          p {
-            @apply relative text-2xl text-fourth-600;
+            @apply relative text-xl lg:text-2xl text-fourth-600;
             &::before {
                content: '';
                @apply absolute -bottom-5 left-1/2 -translate-x-1/2 w-20 h-2 bg-primary-600 rounded-sm;
@@ -37,5 +37,11 @@
          content: '';
          @apply absolute top-0 left-0 w-full h-screen bg-primary-0/50;
       }
+   }
+}
+
+@media (max-width: 640px) {
+   .landing {
+      background-position: right;
    }
 }

@@ -1,0 +1,38 @@
+@layer components {
+   .underlined-title {
+      @apply relative mb-20 text-center text-3xl text-primary-600 uppercase;
+      &::before {
+         content: '';
+         @apply absolute -bottom-5 left-1/2 -translate-x-1/2 w-20 h-1 rounded bg-primary-600;
+      }
+   }
+
+   .articles {
+      @apply w-[90%] my-0 mx-auto pt-20 pb-40;
+
+      /* TITLE */
+
+      /* GRID */
+      .articles-grid {
+         @apply grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-5;
+
+         /* ARTICLE CARD */
+         .article-card {
+            @apply shadow-lg shadow-primary-600/50 bg-[#F2F2F2];
+
+            /* BODY CARD */
+            .card-body {
+               @apply py-20 px-10;
+
+               hr {
+                  @apply block w-12 mx-auto mb-5 border-[2px] border-primary-600 rounded;
+               }
+
+               p {
+                  @apply w-3/4 mx-auto text-base lg:text-lg text-center;
+               }
+            }
+         }
+      }
+   }
+}

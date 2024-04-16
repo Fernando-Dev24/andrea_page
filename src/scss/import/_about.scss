@@ -1,0 +1,29 @@
+@layer components {
+   .about {
+      @apply grid grid-cols-1 lg:grid-cols-2;
+
+      .about-bg {
+         @apply relative w-full;
+
+         /* IMAGE */
+         img {
+            @apply w-full;
+         }
+
+         /* DARK SHADOW */
+         &::before {
+            content: '';
+            @apply absolute top-0 left-0 w-full h-full bg-primary-0/50;
+         }
+      }
+
+      /* ABOUT CONTENT */
+      .about-content {
+         @apply lg:flex lg:flex-col lg:justify-center lg:items-center my-10 px-5 lg:px-20;
+
+         p {
+            @apply text-base text-primary-0/80 leading-7 lg:leading-8;
+         }
+      }
+   }
+}
