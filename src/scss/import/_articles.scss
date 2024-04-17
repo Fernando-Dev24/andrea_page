@@ -10,8 +10,6 @@
    .articles {
       @apply w-[90%] my-0 mx-auto pt-20 pb-40;
 
-      /* TITLE */
-
       /* GRID */
       .articles-grid {
          @apply grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-5;
@@ -19,6 +17,12 @@
          /* ARTICLE CARD */
          .article-card {
             @apply shadow-lg shadow-primary-600/50 bg-[#F2F2F2];
+
+            /* CARD IMAGE */
+            figure,
+            figure img {
+               @apply w-full;
+            }
 
             /* BODY CARD */
             .card-body {

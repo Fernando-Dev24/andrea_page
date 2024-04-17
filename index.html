@@ -19,6 +19,7 @@
          referrerpolicy="no-referrer"
       />
 
+      <!-- TITLE -->
       <title>Andrea Callejas</title>
    </head>
    <body>
@@ -27,8 +28,8 @@
          <nav>
             <a href="./index.html">LO</a>
             <div>
-               <a href="#">ABOUT</a>
-               <a href="#">ARTICLES</a>
+               <a href="#about">ABOUT</a>
+               <a href="#articles">ARTICLES</a>
             </div>
          </nav>
 
@@ -39,7 +40,7 @@
       </header>
 
       <!-- ARTICLES -->
-      <section class="articles">
+      <section class="articles" id="articles">
          <h3 class="font-silkFlowers underlined-title">Latest Articles</h3>
 
          <section class="articles-grid">
@@ -79,7 +80,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
          <figure class="about-bg">
             <img src="/assets/about-bg.jpg" alt="About image" />
          </figure>
@@ -101,5 +102,18 @@
       </section>
 
       <!-- FOOTER -->
+      <footer class="footer">
+         <nav class="social-media">
+            <a href="#">
+               <i class="fa-brands fa-instagram fa-fw"></i>
+            </a>
+            <p id="copyright">Derechos reservados - 2024</p>
+         </nav>
+
+         <nav class="internal-links">
+            <a href="#about">about</a>
+            <a href="#articles">articles</a>
+         </nav>
+      </footer>
    </body>
 </html>
