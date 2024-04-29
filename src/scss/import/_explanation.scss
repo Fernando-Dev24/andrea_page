@@ -1,0 +1,34 @@
+@layer base {
+   .explanation {
+      @apply w-[90%] my-20 mx-auto;
+      h3 {
+         @apply font-silkFlowers mb-5 text-3xl text-primary-600;
+      }
+      p {
+         @apply mb-8 text-base lg:text-lg leading-8 text-primary-0/90;
+      }
+      img {
+         @apply w-full h-[50vh] lg:h-[50vh] mb-8 rounded-lg;
+         vertical-align: top;
+         &#explanation-img-1 {
+            display: none;
+            background: url('../../../public/assets/trashcan.jpg');
+         }
+         &#explanation-img-2 {
+            background: url('../../../public/assets/cleaning-journey-es.jpeg')
+               center;
+         }
+      }
+   }
+}
+
+@media (min-width: 1024px) {
+   .explanation {
+      img {
+         &#explanation-img-1 {
+            display: block;
+            background-position: center;
+         }
+      }
+   }
+}

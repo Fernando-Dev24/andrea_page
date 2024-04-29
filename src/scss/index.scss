@@ -4,8 +4,10 @@
 @tailwind utilities;
 
 /* CUSTOM STYLES USING SCSS NORMAL */
+@import './import/about';
+@import './import/articles';
+@import './import/explanation';
+@import './import/footer';
 @import './import/init';
 @import './import/landing';
-@import './import/articles';
-@import './import/about';
-@import './import/footer';
+@import './import/reasons-why';

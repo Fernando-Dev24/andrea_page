@@ -1,0 +1,28 @@
+@layer components {
+   .reasons-why {
+      /* HEADER */
+      .reasons-why-header {
+         @apply w-[90%] mx-auto;
+         & > h3 {
+            @apply font-silkFlowers mb-5 text-3xl text-center text-primary-600;
+         }
+         & > p {
+            @apply lg:w-3/4 mx-auto mb-20 text-center;
+         }
+      }
+
+      /* BENEFITS */
+      .benefits {
+         @apply grid grid-cols-1 lg:grid-cols-2;
+         img {
+            @apply w-full h-auto;
+         }
+         article {
+            @apply w-full flex flex-col justify-center items-center py-20 px-5 lg:py-0 lg:px-20;
+            p {
+               @apply w-full my-2 p-4 border border-primary-0/10 rounded bg-[#F2F2F2] transition-colors duration-150 hover:bg-[#dfdfdf];
+            }
+         }
+      }
+   }
+}
