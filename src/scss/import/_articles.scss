@@ -8,7 +8,7 @@
    }
 
    .articles {
-      @apply w-[90%] my-0 mx-auto pt-20 pb-40;
+      @apply w-[90%] my-0 mx-auto py-20;
 
       /* GRID */
       .articles-grid {
@@ -33,7 +33,7 @@
                }
 
                p {
-                  @apply w-3/4 mx-auto text-base lg:text-lg text-center;
+                  @apply w-3/4 mx-auto text-2xl text-center;
                }
             }
          }
