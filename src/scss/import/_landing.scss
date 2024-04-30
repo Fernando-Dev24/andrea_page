@@ -21,7 +21,7 @@
       }
 
       section {
-         @apply container h-[75vh] flex flex-col justify-center items-center;
+         @apply h-[75vh] flex flex-col justify-center items-center;
          h1 {
             @apply lg:w-1/2 text-center font-silkFlowers text-5xl lg:text-8xl text-primary-100;
          }
