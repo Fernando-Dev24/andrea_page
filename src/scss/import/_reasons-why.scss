@@ -15,7 +15,7 @@
       .benefits {
          @apply grid grid-cols-1 lg:grid-cols-2;
          img {
-            @apply w-full h-auto;
+            @apply w-full;
          }
          article {
             @apply w-full flex flex-col justify-center items-center py-20 px-5 lg:py-0 lg:px-20;
